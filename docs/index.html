@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="InstallRouteur, client Windows natif de routage des dossiers proposés par les installateurs.">
+  <title>InstallRouteur</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Windows · local · natif</p>
+    <h1>InstallRouteur</h1>
+    <p class="lead">Choisir un emplacement cohérent pour les logiciels, sans déplacer les répertoires système de Windows.</p>
+    <p><a class="button" href="https://github.com/mindofillusion/InstallRouteur">Voir le projet</a> <a class="button secondary" href="https://github.com/mindofillusion/InstallRouteur-catalog">Voir le catalogue</a></p>
+  </header>
+  <main>
+    <section>
+      <h2>Ce que fait le client</h2>
+      <p>Il reconnait un logiciel à partir d'indices locaux, puis remplace la racine d'un chemin d'installation proposé. Une règle peut cibler une lettre de lecteur ou un dossier ; plusieurs catégories peuvent partager la même destination.</p>
+    </section>
+    <section>
+      <h2>Ce qu'il ne fait pas</h2>
+      <p>Il ne déplace pas <code>Program Files</code>, ne crée pas de pilote, de service, de hook ni d'injection. Il n'écrit que dans un champ visible d'un installateur reconnu, sans modifier les choix cachés de l'installateur.</p>
+    </section>
+    <section>
+      <h2>Catalogue public, données privées</h2>
+      <p>Le catalogue commun est public et séparé. Vos règles et classifications personnelles restent sur votre ordinateur ; elles ne sont jamais envoyées à GitHub.</p>
+      <p>Les futures mises à jour seront distribuées sous forme de versions signées. Le client refusera tout catalogue non signé, invalide, trop volumineux ou mal formé.</p>
+    </section>
+    <section>
+      <h2>Contribuer</h2>
+      <p>Vous pouvez proposer une classification, accompagnée d'une source publique. Les propositions sont revues avant toute publication et ne modifient jamais directement le catalogue distribué.</p>
+      <p><a href="https://github.com/mindofillusion/InstallRouteur/issues/new/choose">Proposer une classification</a></p>
+    </section>
+  </main>
+  <footer>InstallRouteur · projet en cours de publication</footer>
+</body>
+</html>
