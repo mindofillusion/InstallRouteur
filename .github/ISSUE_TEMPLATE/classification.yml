@@ -40,7 +40,7 @@ body:
     id: subcategory
     attributes:
       label: Sous-catégorie
-      description: Exemple : Retouche d'image, Virtualisation, Éditeur de code.
+      description: "Exemple : Retouche d'image, Virtualisation, Éditeur de code."
     validations:
       required: true
   - type: input
