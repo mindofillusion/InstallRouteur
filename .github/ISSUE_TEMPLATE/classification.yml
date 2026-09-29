@@ -47,6 +47,6 @@ body:
     id: source
     attributes:
       label: Source publique
-      description: URL officielle permettant de vérifier le logiciel.
+      description: URL utile à la revue ; indiquez si elle n'est pas officielle.
     validations:
       required: true
