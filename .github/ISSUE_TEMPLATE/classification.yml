@@ -1,0 +1,52 @@
+name: Proposer une classification
+description: Soumettre un logiciel pour examen avant ajout éventuel au catalogue public.
+title: "Classification : "
+labels: ["catalogue", "à examiner"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cette proposition n'est pas publiée automatiquement. N'ajoutez ni données personnelles ni lien privé.
+  - type: input
+    id: product
+    attributes:
+      label: Nom du logiciel
+      description: Nom commercial ou nom officiel, sans numéro de version si possible.
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: Alias connus
+      description: Noms utilisés par les installateurs, séparés par des virgules.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Catégorie
+      options:
+        - Bureautique
+        - Création
+        - Développement
+        - Jeux
+        - Multimédia
+        - Réseau
+        - Sécurité
+        - Système
+        - Utilitaire
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: subcategory
+    attributes:
+      label: Sous-catégorie
+      description: Exemple : Retouche d'image, Virtualisation, Éditeur de code.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source publique
+      description: URL officielle permettant de vérifier le logiciel.
+    validations:
+      required: true
